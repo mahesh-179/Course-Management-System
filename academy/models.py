@@ -10,7 +10,7 @@ class Student(models.Model):
 
 
     def __str__(self):
-        return f"{self.name}-{self.email}"
+        return f"{self.name.upper()}"
 
 class Course(models.Model):
     course_name = models.CharField(max_length=25,blank=True,null=True)
